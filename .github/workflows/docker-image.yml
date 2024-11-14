@@ -27,8 +27,8 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: lxzlxzhaoo
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build And Push
         uses: docker/build-push-action@v3
@@ -37,5 +37,4 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            ghcr.io/${{ secrets.DOCKERHUB_USERNAME }}/${{ env.GITHUB_REPOSITORY_NAME_PART }}:${{ env.GITHUB_REF_NAME }}
-            ghcr.io/${{ secrets.DOCKERHUB_USERNAME }}/${{ env.GITHUB_REPOSITORY_NAME_PART }}:latest
+            ghcr.io/lxzlxzhaoo/it-tools:latest:${{ github.sha }}
