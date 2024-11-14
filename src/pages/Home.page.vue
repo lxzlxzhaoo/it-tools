@@ -13,19 +13,19 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Free collection of essential developer tools including formatters, converters, generators, and validators. Built for developers, by developers.'
+      content: 'Free collection of essential developer tools including formatters, converters, generators, and validators. Built for developers, by developers.',
     },
     {
       name: 'keywords',
-      content: 'developer tools, online tools, web development, IT tools, code formatter, converter, generator'
+      content: 'developer tools, online tools, web development, IT tools, code formatter, converter, generator',
     },
     {
       property: 'og:title',
-      content: 'IT Tools - Essential Developer Toolkit'
+      content: 'IT Tools - Essential Developer Toolkit',
     },
     {
       property: 'og:description',
-      content: 'Free collection of essential developer tools including formatters, converters, generators, and validators. Built for developers, by developers.'
+      content: 'Free collection of essential developer tools including formatters, converters, generators, and validators. Built for developers, by developers.',
     },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
@@ -78,10 +78,10 @@ function onUpdateFavoriteTools() {
       <section v-if="toolStore.newTools.length > 0" class="tools-section">
         <h2 class="section-title">{{ t('home.categories.newestTools') }}</h2>
         <div class="tools-grid">
-          <ToolCard 
-            v-for="tool in toolStore.newTools" 
-            :key="tool.name" 
-            :tool="tool" 
+          <ToolCard
+            v-for="tool in toolStore.newTools"
+            :key="tool.name"
+            :tool="tool"
             class="tool-card"
           />
         </div>
@@ -91,10 +91,10 @@ function onUpdateFavoriteTools() {
       <section class="tools-section">
         <h2 class="section-title">{{ $t('home.categories.allTools') }}</h2>
         <div class="tools-grid">
-          <ToolCard 
-            v-for="tool in toolStore.tools" 
-            :key="tool.name" 
-            :tool="tool" 
+          <ToolCard
+            v-for="tool in toolStore.tools"
+            :key="tool.name"
+            :tool="tool"
             class="tool-card"
           />
         </div>
