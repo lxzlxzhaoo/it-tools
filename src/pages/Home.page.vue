@@ -11,16 +11,16 @@ const toolStore = useToolStore();
 useHead({
   title: 'IT Tools - Essential Developer Toolkit',
   meta: [
-    { 
-      name: 'description', 
+    {
+      name: 'description',
       content: 'Free collection of essential developer tools including formatters, converters, generators, and validators. Built for developers, by developers.'
     },
-      { 
+    {
       name: 'keywords',
       content: 'developer tools, online tools, web development, IT tools, code formatter, converter, generator'
     },
     {
-      property: 'og:title', 
+      property: 'og:title',
       content: 'IT Tools - Essential Developer Toolkit'
     },
     {
