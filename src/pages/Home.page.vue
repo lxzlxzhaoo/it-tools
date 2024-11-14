@@ -9,23 +9,23 @@ import { useToolStore } from '@/tools/tools.store';
 const toolStore = useToolStore();
 
 useHead({
-  title: 'IT Tools - Essential Developer Toolkit',
+  title: 'IT Tools - 开发者必备工具箱',
   meta: [
     {
       name: 'description',
-      content: 'Free collection of essential developer tools including formatters, converters, generators, and validators. Built for developers, by developers.',
+      content: '免费的开发者工具集合，包括格式化、转换、生成和验证工具。由开发者构建，为开发者服务。',
     },
     {
       name: 'keywords',
-      content: 'developer tools, online tools, web development, IT tools, code formatter, converter, generator',
+      content: '开发者工具,在线工具,Web开发,IT工具,代码格式化,转换器,生成器',
     },
     {
       property: 'og:title',
-      content: 'IT Tools - Essential Developer Toolkit',
+      content: 'IT Tools - 开发者必备工具箱',
     },
     {
       property: 'og:description',
-      content: 'Free collection of essential developer tools including formatters, converters, generators, and validators. Built for developers, by developers.',
+      content: '免费的开发者工具集合，包括格式化、转换、生成和验证工具。由开发者构建，为开发者服务。',
     },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
@@ -45,7 +45,7 @@ function onUpdateFavoriteTools() {
   <div class="home-container">
     <!-- Hero Section -->
     <section class="hero-section">
-      <h1 class="hero-title">{{ $t('IT Tools - Essential Developer Toolkit') }}</h1>
+      <h1 class="hero-title">{{ $t('IT Tools - 开发者必备工具箱') }}</h1>
       <p class="hero-subtitle">{{ $t('home.subtitle') }}</p>
     </section>
 

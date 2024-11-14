@@ -3,9 +3,10 @@ import { get } from '@vueuse/core';
 import type { Plugin } from 'vue';
 import { createI18n } from 'vue-i18n';
 
-const i18n = createI18n({
+export const i18n = createI18n({
   legacy: false,
-  locale: 'en',
+  locale: 'zh',
+  fallbackLocale: 'en',
   messages,
 });
 
