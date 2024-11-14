@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { IconDragDrop, IconHeart } from '@tabler/icons-vue';
+import { IconDragDrop } from '@tabler/icons-vue';
 import { useHead } from '@vueuse/head';
 import { computed } from 'vue';
 import Draggable from 'vuedraggable';
-import ColoredCard from '../components/ColoredCard.vue';
 import ToolCard from '../components/ToolCard.vue';
 import { useToolStore } from '@/tools/tools.store';
-import { config } from '@/config';
 
 const toolStore = useToolStore();
 
@@ -15,19 +13,19 @@ useHead({
   meta: [
     { 
       name: 'description', 
-      content: 'Free collection of essential developer tools including formatters, converters, generators, and validators. Built for developers, by developers.' 
+      content: 'Free collection of essential developer tools including formatters, converters, generators, and validators. Built for developers, by developers.'
     },
-    { 
-      name: 'keywords', 
-      content: 'developer tools, online tools, web development, IT tools, code formatter, converter, generator' 
+      { 
+      name: 'keywords',
+      content: 'developer tools, online tools, web development, IT tools, code formatter, converter, generator'
     },
-    { 
+    {
       property: 'og:title', 
-      content: 'IT Tools - Essential Developer Toolkit' 
+      content: 'IT Tools - Essential Developer Toolkit'
     },
-    { 
-      property: 'og:description', 
-      content: 'Free collection of essential developer tools including formatters, converters, generators, and validators. Built for developers, by developers.' 
+    {
+      property: 'og:description',
+      content: 'Free collection of essential developer tools including formatters, converters, generators, and validators. Built for developers, by developers.'
     },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
